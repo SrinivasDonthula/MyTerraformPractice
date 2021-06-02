@@ -8,6 +8,10 @@ variable "secret_key" {
      default = ""
 }
 
+variable "host"  {
+    default = "aws_instance.my_web_instance.public_dns"
+}
+
 variable "region" {
     type    = string
     default = "ap-southeast-1"
